@@ -114,10 +114,27 @@ class Program
         //     Console.WriteLine(i);
         // }
 
-        void DisplayMessage(string name)
-        {
-            Console.WriteLine($"");
-        }
+        // void DisplayMessage(string name)
+        // {
+        //     Console.WriteLine($"");
+        // }
+
+        //group activity 1/22/26
+        // for (int i = 0; i < 5; i++)
+        // {
+        //     Console.WriteLine("Hello, World");
+        // }
+
+        // Console.WriteLine("Give me a number ");
+        // string input = Console.ReadLine();
+        // int number = int.Parse(input);
+
+        // for (int i = 1; i <= 12; i++)
+        // {
+        //     Console.WriteLine(number * i);
+        //}
+
+
 
     }
 }

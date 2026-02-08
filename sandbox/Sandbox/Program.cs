@@ -1,10 +1,23 @@
-using System;
-using Microsoft.VisualBasic;
+// using System;
+// using Microsoft.VisualBasic;
 
-class Program
+// class Program
+// {
+//     static void Main(string[] args)
+    //{   
+
+using System;
+using System.Threading;
+
+public class Program
 {
-    static void Main(string[] args)
-    {   
+    public static void Main()
+    {
+        Car myCar = new Car();
+        myCar.Run();
+    }
+}
+
         //1/15/26 in class group assignment
 
         // Console.WriteLine("Give me a verb ");
@@ -136,5 +149,5 @@ class Program
 
 
 
-    }
-}
+    //}
+//}

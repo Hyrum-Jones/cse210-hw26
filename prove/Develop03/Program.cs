@@ -4,6 +4,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+       Reference reference = new Reference("Helaman", 5, 11, 12);
+        Scripture scripture = new Scripture(reference,
+            "And he hath power given unto him from the Father to redeem them from their sins " +
+            "because of repentance; therefore he hath sent his angels to declare the tidings " +
+            "of the conditions of repentance, which bringeth unto the power of the Redeemer, unto the salvation of their souls. " +
+            "And now, my sons, remember, remember that it is upon the rock of our Redeemer, who is Christ, " +
+            "the Son of God, that ye must build your foundation; that when the devil shall send forth his mighty winds, yea, " +
+            "his shafts in the whirlwind, yea, when all his hail and his mighty storm shall beat upon you, " +
+            "it shall have no power over you to drag you down to the gulf of misery and endless wo, " +
+            "because of the rock upon which ye are built, which is a sure foundation, a foundation whereon if men build they cannot fall.");
+
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine(scripture.DisplayScripture());
+            Console.WriteLine("\nPress Enter to hide more words or type 'quit' to end:");
+            string input = Console.ReadLine()?.Trim().ToLower();
+
+            if (input == "quit")
+                break;
+
+            if (scripture.AllWordsHidden())
+            {
+                Console.Clear();
+                Console.WriteLine("All words are hidden. Great job!");
+                break;
+            }
+
+            scripture.HideRandomWords(3);
+        } 
     }
 }
